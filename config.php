@@ -10,4 +10,5 @@
 
     $PAGSEGURO_EMAIL = 'SEU E-MAIL';
     $PAGSEGURO_TOKEN = 'SEU TOKEN';
+	# e aí?
 ?>
