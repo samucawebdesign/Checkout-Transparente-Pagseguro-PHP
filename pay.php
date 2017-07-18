@@ -19,7 +19,7 @@
         'senderHash'                => $senderHash,
         'receiverEmail'             => $PAGSEGURO_EMAIL,
         'paymentMode'               => 'default', 
-        'paymentMethod'             => 'creditCard', 
+        'paymentMethod'             => 'creditCard',  # ou BOLETO ou ONLINE_DEBIT
         'currency'                  => 'BRL',
         // 'extraAmount'               => '1.00',
         'itemId1'                   => '0001',
@@ -41,8 +41,15 @@
         'shippingAddressCountry'    => 'BRA',
         'shippingType'              => 1,
         'shippingCost'              => '1.00',
-        'installmentQuantity'       => 1,
-        'installmentValue'          => '101.00',
+        
+		'installmentQuantity'       => 4, # Número de parcelas
+        'installmentValue'          => '25.25', # Valor da parcela
+		'noInterestInstallmentQuantity' => 4,
+		
+		'paymentMethodGroup1' => 'CREDIT_CARD',
+		'paymentMethodConfigKey1_1' => 'MAX_INSTALLMENTS_NO_INTEREST',
+		'paymentMethodConfigValue1_1' => 2,
+		
         'creditCardHolderName'      => 'Chuck Norris',
         'creditCardHolderCPF'       => '54793120652',
         'creditCardHolderBirthDate' => '01/01/1990',

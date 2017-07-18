@@ -8,6 +8,6 @@
         $PAGSEGURO_API_URL = 'https://ws.sandbox.pagseguro.uol.com.br/v2';
     }
 
-    $PAGSEGURO_EMAIL = 'SEU E-MAIL';
-    $PAGSEGURO_TOKEN = 'SEU TOKEN';
+    $PAGSEGURO_EMAIL = 'samuca@samuca.eti.br';
+    $PAGSEGURO_TOKEN = '3526E4AC202940759853ADACE943E7EB';
 ?>
